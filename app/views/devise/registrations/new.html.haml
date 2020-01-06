@@ -1,0 +1,99 @@
+= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+  .re-new-wrap
+    .re-new-main
+      .re-new-main__tittle
+        .re-new-main__tittle--top
+          強みビジネスクラブ・個別説明会（無料・オンライン）
+        .re-new-main__tittle--main
+          %li 強みビジネスクラブ・個別説明会（無料・オンライン）に興味を持っていただきありがとうございます。
+          %li ご希望の日時をカレンダーアイコンをクリック/タップして選んでください。
+          %li 「その他の日程」を選ばれた場合は、鶴岡より個別にメールにて日程調整のご連絡をさしあげます。
+      .re-new-main__mail
+        .re-new-main__mail--top
+          .re-new-main__mail--top__left
+            メールアドレス
+          .re-new-main__mail--top__right
+            必須
+        .re-new-main__mail--center
+          icould、docomoまたはauのアドレスはメールが届かないトラブルが多いので、使用不可。
+        .re-new-main__mail--bottom
+          = f.email_field :email,class:"mail-form",autofocus: true, autocomplete: "email",placeholder:"英数各半角入力"
+
+
+      .re-new-main__tel
+        .re-new-main__tel--top
+          .re-new-main__tel--top__left
+            パスワード
+          .re-new-main__tel--top__right
+            必須
+        .re-new-main__tel--bottom
+          = f.password_field :password,class:"tel-form", autocomplete: "new-password",placeholder:"英数各半角入力"
+
+
+
+      .re-new-main__tel
+        .re-new-main__tel--top
+          .re-new-main__tel--top__left
+            お電話番号
+          .re-new-main__tel--top__right
+            必須
+        .re-new-main__tel--bottom
+          = f.email_field :email,class:"tel-form",autofocus: true, autocomplete: "email",placeholder:"08044527045"
+      
+
+      .re-new-main__tel
+        .re-new-main__tel--top
+          .re-new-main__tel--top__left
+            お名前
+          .re-new-main__tel--top__right
+            必須
+        .re-new-main__tel--bottom
+          = f.email_field :email,class:"tel-form",autofocus: true, autocomplete: "email",placeholder:"山田 太郎"
+      
+      .re-new-main__tel
+        .re-new-main__tel--top
+          .re-new-main__tel--top__left
+            フリガナ
+          .re-new-main__tel--top__right
+            必須
+        .re-new-main__tel--bottom
+          = f.email_field :email,class:"tel-form",autofocus: true, autocomplete: "email",placeholder:"ヤマダ タロウ"
+
+      .re-new-main__facebook
+        .re-new-main__mail--top
+          .re-new-main__mail--top__left
+            Facebook名
+          .re-new-main__mail--top__right
+            必須
+        .re-new-main__mail--center
+          担当者からのお知らせをFacebookメッセンジャーよりお送りします。カタカナ・ローマ字表記などお申し込み名と表記が違う場合は記入をお願い致します。
+        .re-new-main__mail--bottom
+          = f.email_field :email,class:"mail-form",autofocus: true, autocomplete: "email",placeholder:"山田 タロウ"
+
+
+      .re-new-main__job
+        .re-new-main__job--top
+          .re-new-main__job--top__left
+            ご職業
+          .re-new-main__job--top__right
+            必須
+        .re-new-main__job--bottom
+          .re-new-main__job--bottom__content
+            = f.radio_button :job,"1",id:"a"
+            = f.label :job, "コーチ",for:"a"
+          .re-new-main__job--bottom__content
+            = f.radio_button :job,"2"
+            =f.label :job, "セラピスト"
+          .re-new-main__job--bottom__content
+            = f.radio_button :job,"3"
+            =f.label :job, "カウンセラー"
+          .re-new-main__job--bottom__content
+            = f.radio_button :job,"4"
+            =f.label :job, "インストラクター"
+          .re-new-main__job--bottom__content
+            = f.radio_button :job,"5"
+            =f.label :job, "整体業"
+          .re-new-main__job--bottom__content
+            = f.radio_button :job,"6"
+            =f.label :job, "その他"
+    -# = f.submit "Sign up"
