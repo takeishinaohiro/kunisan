@@ -1,0 +1,53 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.login-wrapper{
+  background-image: radial-gradient(circle farthest-side at 50% 50%, #2294d7, #275296);
+  height: 100vh;
+
+  h2{
+    text-align: center;
+    font-size:40px ;
+    padding: 20px 0;
+    color: white;
+  }
+  .login-content{
+    background-color:
+    #f0f0f0;
+    margin:0 auto;
+    width:40%;
+    padding:2%;
+    .field{
+      margin-bottom:20px;
+      
+      font-family: sans-serif;
+    .login-title{
+      font-weight: 600;
+      margin-left:2%;
+    }  
+    input{
+      display: block;
+      margin:0 auto;
+      width:90%;
+      height: 50px;
+      border-radius: 5px;
+      border:solid #275296 1px;
+      padding:0 15px;
+      font-size: 20px;
+    }
+  }
+  .actions{
+    display: flex;
+    text-align: right;
+  .login-btn{
+    background-color: #275296;
+    padding:10px 20px;
+    color: white;
+    border-radius:6px ;
+    display: block;
+    margin:0 0 0 auto;
+    margin-right:2%;
+  }
+}
+}
+}
