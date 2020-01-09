@@ -38,7 +38,7 @@
           .re-new-main__tel--top__right
             必須
         .re-new-main__tel--bottom
-          = f.email_field :tel,class:"tel-form",autofocus: true, autocomplete: "email",placeholder:"08044527045"
+          = f.phone_field :tel,class:"tel-form",autofocus: true, autocomplete: "email",placeholder:"08044527045"
       
 
       .re-new-main__tel
@@ -48,7 +48,7 @@
           .re-new-main__tel--top__right
             必須
         .re-new-main__tel--bottom
-          = f.email_field :name,class:"tel-form",autofocus: true, autocomplete: "email",placeholder:"山田 太郎"
+          = f.text_field :name,class:"tel-form",autofocus: true, autocomplete: "email",placeholder:"山田 太郎"
       
       .re-new-main__tel
         .re-new-main__tel--top
@@ -57,7 +57,7 @@
           .re-new-main__tel--top__right
             必須
         .re-new-main__tel--bottom
-          = f.email_field :read_name,class:"tel-form",autofocus: true, autocomplete: "email",placeholder:"ヤマダ タロウ"
+          = f.text_field :read_name,class:"tel-form",autofocus: true, autocomplete: "email",placeholder:"ヤマダ タロウ"
 
       .re-new-main__facebook
         .re-new-main__mail--top
@@ -68,7 +68,7 @@
         .re-new-main__mail--center
           担当者からのお知らせをFacebookメッセンジャーよりお送りします。カタカナ・ローマ字表記などお申し込み名と表記が違う場合は記入をお願い致します。
         .re-new-main__mail--bottom
-          = f.email_field :facebook_name,class:"mail-form",autofocus: true, autocomplete: "email",placeholder:"山田 タロウ"
+          = f.text_field :facebook_name,class:"mail-form",autofocus: true, autocomplete: "email",placeholder:"山田 タロウ"
 
 
       .re-new-main__job
@@ -82,18 +82,18 @@
             = f.radio_button :job,"1",id:"a"
             = f.label :job, "コーチ",for:"a"
           .re-new-main__job--bottom__content
-            = f.radio_button :job,"2"
-            =f.label :job, "セラピスト"
+            = f.radio_button :job,"2",id:"b"
+            =f.label :job, "セラピスト",for:"b"
           .re-new-main__job--bottom__content
-            = f.radio_button :job,"3"
-            =f.label :job, "カウンセラー"
+            = f.radio_button :job,"3",id:"c"
+            =f.label :job, "カウンセラー",for:"c"
           .re-new-main__job--bottom__content
-            = f.radio_button :job,"4"
-            =f.label :job, "インストラクター"
+            = f.radio_button :job,"4",id:"d"
+            =f.label :job, "インストラクター",for:"d"
           .re-new-main__job--bottom__content
-            = f.radio_button :job,"5"
-            =f.label :job, "整体業"
+            = f.radio_button :job,"5",id:"e"
+            =f.label :job, "整体業",for:"e"
           .re-new-main__job--bottom__content
-            = f.radio_button :job,"6"
-            =f.label :job, "その他"
+            = f.radio_button :job,"6",id:"f"
+            =f.label :job, "その他",for:"f"
     = f.submit "Sign up"
