@@ -1,0 +1,113 @@
+.mypage-wrap{
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+}
+
+.mypage-content{
+  width: 70%;
+  margin: 5rem auto;
+  border: 0.5px solid rgba(51, 51, 51, 0.158);
+  color: rgb(88, 88, 88);
+
+  &__top{
+    margin: 2rem auto;
+    font-size: 2rem;
+    width: 90%;
+
+  }
+  &__main{
+    margin: 0 auto;
+    width: 90%;
+
+    &--li{
+      margin: 2rem 0 0;
+    }
+  }
+  &__bottom{
+    width: 80%;
+    margin: 3rem auto;
+
+    &--top{
+      font-size: 1.5rem;
+      color: rgb(255, 217, 0);
+    }
+    &--main{
+      list-style: none;
+      border: rgb(255, 217, 0) solid 0.2px ;
+      width: 90%;
+      padding: 2rem;
+      display: block;
+      line-height: 2rem;
+    }
+  }
+  &__calendar{
+    margin: 2rem auto;
+    font-size: 2rem;
+    width: 90%;
+
+    &--top{
+      text-align: center;
+      width: 400px;
+      font-size: 1.5rem;
+      color: #333;
+      margin: 0 auto;
+    }
+
+    &--main{
+      width: 80%;
+      height: 300px;
+      margin: 0 auto;
+      background-color: rgb(71, 70, 70);
+    }
+  }
+
+  &__footer{
+    margin: 2rem auto;
+    width: 90%;
+
+    &--top{
+      text-align: center;
+      width: 90%;
+      font-size: 1.8rem;
+      color: #fff;
+      margin: 0 auto;
+      background-color: rgb(60, 117, 136);
+      height: 60px;
+      display: block;
+      line-height: 60px;
+    }
+    &--main{
+      width: 90%;
+      margin: 2rem auto;
+      height: 200px;
+      display: flex;
+      justify-content: space-between;
+
+      &__left{
+        background-image: url("/photo-1438761681033-6461ffad8d80.jpeg");
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+      }
+      &__right{
+        margin: 1rem;
+
+        .li-top{
+          list-style: none;
+        }
+        .li-main{
+          list-style: none;
+          margin: 1rem 0 0 0;
+        }
+        .li-bottom{
+          margin: 2rem 0 0 0;
+          list-style: none;
+        }
+        .facebook_link{
+          color: rgb(60, 117, 136);
+        }
+      }
+    }
+  }
+}
