@@ -1,4 +1,41 @@
+
 -if current_user.name = "管理者"
+
+.mypage-wrap
+  .mypage-content
+    .mypage-content__top
+      お申し込みありがとうございました
+    .mypage-content__main
+      下記の内容でお申し込みを承利ました。ご確認下さい。
+      %li.mypage-content__main--li 『自分の強みでビジネス構築し集客を仕組みかする40の基本』
+      (無料。リンクを記載したメールで納品)
+      %li.mypage-content__main--li 強みでビジネスクラブ・オンライン無料個別説明会
+      (zoomにて実施。仮予約受付メールをお送りします)
+
+    .mypage-content__bottom
+      .mypage-content__bottom--top
+        注意点
+      .mypage-content__bottom--main
+        %li 当方からのメールを確実に受け取っていただくため、
+        %li @takahashikuniyoshi.comからメールの受信トレイに届くように必要な設定をお願い致します。
+
+    .mypage-content__calendar
+      .mypage-content__calendar--top
+        予定確認用のカレンダー
+      .mypage-content__calendar--main
+
+    .mypage-content__footer
+      .mypage-content__footer--top
+        フェイスブックで友達になりませんか？
+      .mypage-content__footer--main
+        .mypage-content__footer--main__left
+        .mypage-content__footer--main__right
+          %li.li-top フェイスブックで高橋邦欣と友達になってみませんか？
+          %li.li-main ライブ配信や限定募集、コンサル企業などのお知らせも、いち早く受け取れます。
+          %li.li-bottom 友達申請は下記のURLからどうぞ。
+          =link_to "https://www.facebook.com/takahashikuniyoshi",class:"facebook_link" do
+            https://www.facebook.com/takahashikuniyoshi
+
 
   管理者ページ
 
