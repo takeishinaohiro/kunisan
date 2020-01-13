@@ -38,7 +38,9 @@
           .re-new-main__tel--top__right
             必須
         .re-new-main__tel--bottom
+
           = f.phone_field :tel,class:"tel-form",autofocus: true, autocomplete: "email",placeholder:"08044527045"
+
       
 
       .re-new-main__tel
@@ -94,6 +96,30 @@
             = f.radio_button :job,"5",id:"e"
             =f.label :job, "整体業",for:"e"
           .re-new-main__job--bottom__content
-            = f.radio_button :job,"6",id:"f"
-            =f.label :job, "その他",for:"f"
-    = f.submit "Sign up"
+
+            = f.radio_button :job,"6"
+            =f.label :job, "その他"
+      .re-new-main__facebook
+        .re-new-main__job--top
+          .re-new-main__job--top__left
+            希望日時
+          .re-new-main__job--top__right
+            必須 
+        .re-new-main__job--bottom
+          -# %input.dateinput{:type => "date",name:"date"}/
+          .flex_kun
+            = f.date_field :date ,class:"dateinput"
+            = f.select :time,[["15:30~","15:30~",{class:"time_a"}],["17:30~","17:30~",{class:"time_b"}],["19:30~","19:30~",{class:"time_c"}]],{},class:"timeinput"
+            .error.none
+              その日時は埋まっています 
+          %input.hidden1{type:"hidden",value:@date1}
+          %input.hidden2{type:"hidden",value:@date2}
+          %input.hidden3{type:"hidden",value:@date3}
+                
+        
+
+  
+
+
+
+  = f.submit "Sign up",class:"newbtn"
