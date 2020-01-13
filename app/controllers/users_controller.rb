@@ -7,6 +7,19 @@ class UsersController < ApplicationController
   end
 
   def mypage
-  
+
+  end
+
+  def calendar
+    @users = User.all
+    
+
+
+  end
+
+  private
+
+  def user_params
+    params.require(:user).permit!
   end
 end
