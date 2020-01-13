@@ -74,3 +74,4 @@ gem "font-awesome-sass"
 gem "simple_calendar"
 gem "fullcalendar-rails"
 gem "momentjs-rails"
+gem 'google-api-client', require: 'google/apis/calendar_v3'
