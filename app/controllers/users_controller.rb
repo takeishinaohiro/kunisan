@@ -1,8 +1,13 @@
 class UsersController < ApplicationController
+  protect_from_forgery except: :calendar2
   def index
     if user_signed_in?
       redirect_to mypage_users_path
     end
+
+    if session[:day]
+      session.clear
+    end  
 
   end
 
@@ -11,10 +16,14 @@ class UsersController < ApplicationController
   end
 
   def calendar
-    @users = User.all
     
+    @users = User.all
+  end
 
-
+  def calendar2
+    session[:day] = params[:day]
+    session[:time] = params[:time]
+    redirect_to new_user_registration_path
   end
 
   private
