@@ -4,7 +4,6 @@ class UsersController < ApplicationController
       redirect_to mypage_users_path
     end
 
-
   end
 
   def mypage
