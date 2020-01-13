@@ -1,3 +1,14 @@
-マイページ
+-if current_user.name = "管理者"
 
-= link_to "ログアウト", destroy_user_session_path , method: :delete
+  管理者ページ
+
+  = link_to "ログアウト", destroy_user_session_path , method: :delete
+
+  = link_to "予定入力ページ", "#"
+
+
+-else
+
+  マイページ
+
+  = link_to "ログアウト", destroy_user_session_path , method: :delete
