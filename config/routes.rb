@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     collection do
       get "mypage"
       get "calendar"
+      post "calendar2"
     end
   end
 end
