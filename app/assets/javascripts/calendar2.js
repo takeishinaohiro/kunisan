@@ -38,9 +38,9 @@ $(function(){
                     <input type="submit" value="送信する">
                 </div>
               </form>`
-
-             
   $('.fc-day').append(html);
+  var cale = $('.cale').val();
+    // console.log(cale)たむさんおんしゃす清水
 
   $("input:submit").click(function(){
     const day = $(this).parent().parent().parent().data("date");

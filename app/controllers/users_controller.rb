@@ -16,8 +16,9 @@ class UsersController < ApplicationController
   end
 
   def calendar
-    
     @users = User.all
+    # @cale = User.select('date','time')たむさんおんしゃす清水
+    # binding.pry
   end
 
   def calendar2
