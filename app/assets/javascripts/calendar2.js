@@ -23,24 +23,40 @@ $(function(){
   let html = `<form action="/users/calendar2" method="post">
                 <div class=fc-day1>15~
                     <input type="hidden" value = "1" name = "time">
-                    <input type="submit" value="送信する">
+                    <label class="mark">○
+                      <input type="submit" value="送信する" class = "calebtn">
+                    </label>
                 </div>
               </form>
               <form action="/users/calendar2" method="post">
                 <div class=fc-day2>17~
                     <input type="hidden" value="2" name = "time">
-                    <input type="submit" value="送信する">
+                    <label class="mark">○
+                      <input type="submit" value="送信する" class = "calebtn">
+                    </label>
                 </div>
               </form>
               <form action="/users/calendar2" method="post">
                 <div class=fc-day3>19~
                     <input type="hidden" value="3" name = "time">
-                    <input type="submit" value="送信する">
+                    <label class="mark">○
+                      <input type="submit" value="送信する" class = "calebtn">
+                    </label>
                 </div>
               </form>`
   $('.fc-day').append(html);
-  var cale = $('.cale').val();
+  // var cale = $('.cale').val();
     // console.log(cale)たむさんおんしゃす清水
+    // []<<('.fc-day-top').data("date")
+    // var days = new Array[('.fc-day-top').data("date")];
+    // console.log(days)
+
+  //  days = ('.fc-day').data("date")
+  //  days.forEach(function( value ) {
+  //   console.log( value );
+  // });
+  
+  //結構きついっす
 
   $("input:submit").click(function(){
     const day = $(this).parent().parent().parent().data("date");
@@ -53,7 +69,7 @@ $(function(){
   });
   $('.fc-day1, .fc-day2, .fc-day3').click(function(){
     var days = $(this).val();
-    console.log(days)  
+    console.log(days)
   });
   $('input').change(function(){
     var days = $(this).val();
