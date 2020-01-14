@@ -45,21 +45,15 @@ $(function(){
                 </div>
               </form>`
   $('.fc-day').append(html);
-  // var cale = $('.cale').val();
-    // console.log(cale)たむさんおんしゃす清水
-    // []<<('.fc-day-top').data("date")
-    // var days = new Array[('.fc-day-top').data("date")];
-    // console.log(days)
 
-  //  days = ('.fc-day').data("date")
-  //  days.forEach(function( value ) {
-  //   console.log( value );
-  // });
-  
-  //結構きついっす
+   var dates = $('.caleday').val();
+   var times = $('.caletime').val();
+
+   console.log(dates)
+   console.log(times)
 
   $("input:submit").click(function(){
-    const day = $(this).parent().parent().parent().data("date");
+    const day = $(this).parent().parent().parent().parent().data("date");
     $(".fc-day1,.fc-day2,.fc-day3").append(`<input type="hidden" value=${day} name="day">`)
   })
   

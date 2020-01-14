@@ -1,3 +1,6 @@
 カレンダーページ
--# %input.cale{:type => "hidden", :value => @cale}/ たむさんおんしゃす清水
+- @dates.each do |date|
+  %input.caleday{type: "hidden", value: date}/
+- @times.each do |time|
+  %input.caletime{type: "hidden", value: time}/
 #calendar
