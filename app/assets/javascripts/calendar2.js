@@ -49,6 +49,8 @@ $(function(){
    var dates = $('.caleday').val();
    var times = $('.caletime').val();
 
+
+
    console.log(dates)
    console.log(times)
 

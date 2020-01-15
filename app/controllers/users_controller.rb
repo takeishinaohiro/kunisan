@@ -19,7 +19,6 @@ class UsersController < ApplicationController
     @users = User.all
      @dates = User.select('date')
      @times = User.select('time')
-   
   end
 
   def calendar2
