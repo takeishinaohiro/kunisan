@@ -46,12 +46,8 @@ $(function(){
               </form>`
   $('.fc-day').append(html);
 
-   var dates = $('.caleday').val();
-   var times = $('.caletime').val();
 
-   console.log(dates)
-   console.log(times)
-
+  
   $("input:submit").click(function(){
     const day = $(this).parent().parent().parent().parent().data("date");
     $(".fc-day1,.fc-day2,.fc-day3").append(`<input type="hidden" value=${day} name="day">`)
@@ -70,4 +66,35 @@ $(function(){
 
     console.log(days)
   });
+
+  var dates1 = $('.caleday1').val();
+  console.log(dates1)
+  var dates2 = $('.caleday2').val();
+  console.log(dates2)
+  var dates3 = $('.caleday3').val();
+  console.log(dates3)
+
+  $("input:submit").each(function(i,e){
+    var day = $(this).parent().parent().parent().parent().data("date");
+    labelDate2 = `"${day}"`
+    var parents = $(this).parent()
+    const bro = parents.prev()
+    const bros = bro.val()
+    const bros2 = `"${bros}"`
+    if (dates1.indexOf(labelDate2) >= 0 && bros == "1"){
+      $(this).parent().text("×")
+      $(this).addClass("none")
+    }
+    else if (dates2.indexOf(labelDate2) >= 0 && bros == "2"){
+      $(this).parent().text("×")
+      $(this).addClass("none")
+    }
+    else if (dates3.indexOf(labelDate2)>= 0 && bros == "3"){
+      $(this).parent().text("×")
+      $(this).addClass("none")
+    }
+  })
+  
+
+
 });

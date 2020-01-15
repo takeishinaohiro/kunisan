@@ -17,9 +17,18 @@ class UsersController < ApplicationController
 
   def calendar
     @users = User.all
-     @dates = User.select('date')
-     @times = User.select('time')
-   
+    @dates1 = []
+    @dates2 = []
+    @dates3 = []
+    @users.each do |user|
+      if user.time == "1"
+        @dates1 << user.date
+      elsif user.time == "2" 
+        @dates2 << user.date
+      elsif user.time == "3"
+        @dates3 << user.date  
+      end  
+    end
   end
 
   def calendar2
