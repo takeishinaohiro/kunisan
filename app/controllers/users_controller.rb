@@ -17,6 +17,9 @@ class UsersController < ApplicationController
 
   def calendar
     @users = User.all
+
+     @dates = User.select('date')
+     @times = User.select('time')
     @dates1 = []
     @dates2 = []
     @dates3 = []
@@ -29,6 +32,7 @@ class UsersController < ApplicationController
         @dates3 << user.date  
       end  
     end
+
   end
 
   def calendar2

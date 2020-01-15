@@ -47,6 +47,12 @@ $(function(){
   $('.fc-day').append(html);
 
 
+   var dates = $('.caleday').val();
+   var times = $('.caletime').val();
+   console.log(dates)
+   console.log(times)
+
+
   
   $("input:submit").click(function(){
     const day = $(this).parent().parent().parent().parent().data("date");
