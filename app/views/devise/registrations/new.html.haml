@@ -118,6 +118,14 @@
             -#     その日時は埋まっています 
             %input.hidden1{type:"hidden",value:session[:day],name:"user[date]"}
             %input.hidden2{type:"hidden",value:session[:time],name:"user[time]"}
+            グーグルカレンダーと選択形式を統一させる
+            %select{:name => "user[date]"}
+              %option{:value => "選択肢1"} 選択肢1
+              %option{:value => "選択肢2"} 選択肢2
+              %option{:value => "選択肢3"} 選択肢3
+              %option{:value => "選択肢4"} 選択肢4
+
+
 
     = f.submit "Sign up",class:"newbtn"
   
