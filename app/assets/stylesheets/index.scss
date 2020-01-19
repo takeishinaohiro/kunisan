@@ -2,17 +2,13 @@
   background-image: radial-gradient(circle farthest-side at 50% 50%, #2294d7, #275296);
   background-repeat: no-repeat;
   height: 100vh;
+  width: 100%;
+  padding: 10rem 0;
 
-  .top-between{
-    height: 5rem;
-  }
   .index-main{
-    width: 30%;
-    margin: 5rem auto 0;
     a{
       text-decoration: none;
       color: #275296;
-
     }
 
     &__left{
@@ -24,15 +20,14 @@
       text-align: center;
       font-size: 30px;
       line-height: 10rem;
-      margin: 5rem 0 0 0;
+      margin: 0 auto;
 
 
 
       &:hover{
         background-color: rgb(238, 238, 238);
         box-shadow: 0.1rem 0.1rem 0.1rem rgb(0, 0, 0);
-        margin: 1.4rem 0 0 0 ;
-
+        transform: translateY(5px);
       }
 
 
@@ -46,7 +41,7 @@
       text-align: center;
       font-size: 30px;
       line-height: 10rem;
-      margin: 5rem 0 0 0;
+      margin: 3rem auto 0;
 
       &:hover{
         background-color: rgb(238, 238, 238);

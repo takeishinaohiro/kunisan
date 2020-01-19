@@ -18,7 +18,4 @@
  @import "font-awesome-sprockets";
  @import "font-awesome";
  @import "users";
-
- .none{
-   display: none;
- }
+ @import "./common.scss";
