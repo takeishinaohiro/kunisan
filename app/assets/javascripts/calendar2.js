@@ -1,5 +1,6 @@
 $(document).ready(function(){
   $('#calendar').fullCalendar({
+
     users: 'users.json',
     titleFormat: 'YYYY年 M月',
     monthNames: ['１月','２月','３月','４月','５月','６月','７月','８月','９月','１０月','１１月','１２月'],
@@ -15,6 +16,32 @@ $(document).ready(function(){
     today: '今日',
       month: '月',
     },
+
+    
+    googleCalendarApiKey: 'AIzaSyBF0vYwIgndNfqpvXaYoXmRW9OXfCB_cRs',
+    events:{googleCalendarId: '64.sugano.kaito@gmail.com'}
+
+
+
+    // // API キーを設定する
+		// 	googleCalendarApiKey: 'AIzaSyBF0vYwIgndNfqpvXaYoXmRW9OXfCB_cRs',
+		
+    //   eventSources: [
+    //        {
+    //    //スケジュール1
+    //            googleCalendarId: '64.sugano.kaito@gmail.com',
+    //            className: 'calendar_1'
+       
+    //        },
+      //      {
+      //  //スケジュール２
+      //          googleCalendarId: 'カレンダーID２',
+      //          className: 'calendar_2'
+      //      }
+      //  ],
+
+
+
   });
 });
 
@@ -104,3 +131,34 @@ $(function(){
 
 
 });
+
+
+
+
+
+
+// $(document).ready(function() {
+//   $('#calendar').fullCalendar({
+//       // イベントソース
+//       eventSources: [
+//           {
+//               // 沖縄IT勉強会カレンダー
+//               url: 'https://calendar.google.com/calendar/b/1?cid=dDY0LnN1Z2Fuby5rYWl0b0BnbWFpbC5jb20'
+//           },
+//           {
+//               // 日本の祝日
+//               url: 'https://www.google.com/calendar/feeds/japanese__ja%40holiday.calendar.google.com/public/basic',
+//               // タイムゾーン
+//               currentTimezone: 'Asia/Tokyo',
+//               // 背景色とボーダー色
+//               color: '#000000',
+//               // 背景色(colorより優先)
+//               backgroundColor: '#F19824',
+//               // ボーダー色(colorより優先)
+//               borderColor: '#F15A24',
+//               // 文字色
+//               textColor: '#EEEEEE'
+//           }
+//       ]
+//   });
+// });
